@@ -1,8 +1,46 @@
-/*----------------------------------------------------------------------------------------
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License. See LICENSE in the project root for license information.
- *---------------------------------------------------------------------------------------*/
+public class App{
+    public static void main (String[] args){
+        first();
+        second();
+        third();
+        
+    }
 
-package org.nhs.app;
+    public static void first(){
+        for (int i = 1; i<= 5; i++){
+            for (int count = 0; count <= i-1; count++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
 
-// Your code goes here
+    public static void second()
+    {
+        for (int j = 1; j<=5; j++)
+        {
+            for (int k = 1; k <= 5-j; k ++) {
+                System.out.print(".");
+            }
+            for (int l = 1; l <= j; l++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void third() {
+        for (int j = 1; j<=5; j++)
+        {
+            for (int k = 1; k <= 5-j; k ++) {
+                System.out.print(".");
+            }
+            System.out.print(j);
+
+            for (int l = 2; l <= j; l++) {
+                System.out.print(".");
+            }
+            System.out.println();
+        }
+    }
+ }
