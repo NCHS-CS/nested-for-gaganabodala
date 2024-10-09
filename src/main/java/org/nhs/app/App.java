@@ -1,7 +1,9 @@
 public class App{
     public static void main (String[] args){
         first();
+        System.out.println();
         second();
+        System.out.println();
         third();
         
     }
